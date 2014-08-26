@@ -2,7 +2,8 @@ FROM mikefaille/etcd:latest
 MAINTAINER Michaël Faille <michael.faille@nuagebec.ca>
 ADD supervisor-confd.conf /etc/supervisor/conf.d/confd.conf
 
-RUN go get github.com/kelseyhightower/confd 
+# go get confd and prepare confd directories
+RUN go get github.com/kelseyhightower/confd  && mkdir -p /etc/confd/{conf.d,templates}
 
 
-CMD ["run.sh"]
+CMD ["/data/run.sh"]
