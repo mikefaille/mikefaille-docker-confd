@@ -61,6 +61,7 @@ cat /tmp/myconfig.conf
 ```
 
 Output:
+
 ```
 # This a comment
 [myconfig]
