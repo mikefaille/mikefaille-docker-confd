@@ -62,7 +62,7 @@ cat /tmp/myconfig.conf
 
 Output:
 ```
-# This a comment
 [myconfig]
 database_url = db.example.com
 database_user = rob
+```
