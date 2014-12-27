@@ -1,4 +1,4 @@
-FROM mikefaille/etcd:latest
+FROM nuagebec/etcd:latest
 MAINTAINER Michaël Faille <michael.faille@nuagebec.ca>
 ADD supervisor-confd.conf /etc/supervisor/conf.d/confd.conf
 
